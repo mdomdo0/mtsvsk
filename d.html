@@ -286,8 +286,8 @@
 										<div class="nome">Communication</div>
 									</div>
 									<div class="progressBar">
-										<div class="percentagem" style="width: 40%;">
-											<div class="percentagem-num">40%</div>
+										<div class="percentagem" style="width: 50%;">
+											<div class="percentagem-num">50%</div>
 										</div>
 									</div>
 								</div>
@@ -590,7 +590,21 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="contact_info_section wow fadeInUp">
-							<form class="contant_form" id="contact-form" action="assets/mail.php" method="get">
+							<form class="contant_form" id="contact-form" action="https://formspree.io/f/mgerrwaw" method="POST">
+								<div class="contant_form_row">
+									<input name="name" type="text" placeholder="Your Name" class="input-group">
+								</div>
+								<div class="contant_form_row">
+									<input name="email" type="text" placeholder="Email Address" class="input-group">
+								</div>
+								<div class="contant_form_row">
+									<textarea name="message" placeholder="Message" class="textarea-group"></textarea>
+								</div>
+								<!-- your other form fields go here -->
+								<button class="btn01" type="submit"> Send Message <i class="fa fa-paper-plane"></i> </button>
+							</form>
+
+							<!-- <form class="contant_form" id="contact-form" action="assets/mail.php" method="POST">
 								<div class="contant_form_row">
 									<input name="name" type="text" placeholder="Your Name" class="input-group">
 								</div>
@@ -607,7 +621,7 @@
 									<textarea name="message" placeholder="Message" class="textarea-group"></textarea>
 								</div>
 								<button class="btn01" type="submit"> Send Message <i class="fa fa-paper-plane"></i> </button>
-							</form>
+							</form> -->
 							<br>
 							<p class="form-messege"></p>
 						</div>
