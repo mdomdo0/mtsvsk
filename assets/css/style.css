@@ -245,7 +245,7 @@ a:hover {
 	bottom: 30px;
 	margin-top: -55px;
 	border: 2px solid #fff;
-	border-radius: 25px
+	border-radius: 25px;
 }
 
 @media (max-width: 767px) {
