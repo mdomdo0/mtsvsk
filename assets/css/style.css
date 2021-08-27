@@ -39,6 +39,22 @@ font-family: 'Righteous', cursive;
 .clearfix {
 	display: block;
 }
+html {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	/* Remove scrollbar space */
+	background: transparent;
+	/* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+	background: #505050;
+}
 /* close commented backslash hack */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -47,6 +63,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	  /* Hide scrollbars */
 }
 a {
 	text-decoration: none;
@@ -764,7 +781,7 @@ a:hover {
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: #505050scale;
+	-moz-osx-font-smoothing: #505050 scale;
 }
 .Portfolio figcaption:after {
 	content: '';
@@ -779,7 +796,7 @@ a:hover {
 	-ms-transition: all 0.4s ease-out;
 	transition: all 0.4s ease-out;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: #505050scale;
+	-moz-osx-font-smoothing: #505050 scale;
 	transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
 	-o-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
 	-ms-transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(0.95);
@@ -806,7 +823,7 @@ a:hover {
 	-moz-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
 	-webkit-transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: #505050scale;
+	-moz-osx-font-smoothing: #505050 scale;
 	opacity: 0;
 	letter-spacing: 0px;
 }
@@ -835,7 +852,7 @@ a:hover {
 	-ms-transition: all 0.4s ease-out;
 	transition: all 0.4s ease-out;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: #505050scale;
+	-moz-osx-font-smoothing: #505050 scale;
 	opacity: 0;
 	letter-spacing: 0px;
 }
@@ -859,7 +876,7 @@ a:hover {
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: #505050scale;
+	-moz-osx-font-smoothing: #505050 scale;
 	opacity: 0;
 	letter-spacing: 0px;
 }
@@ -879,13 +896,13 @@ a:hover {
 	-ms-transition: all 0.4s ease-out;
 	transition: all 0.4s ease-out;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: #505050scale;
+	-moz-osx-font-smoothing: #505050 scale;
 }
 .Portfolio:hover figcaption {
 	color: #fff;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: #505050scale;
-	background: rgba(28, 182, 152, 0.9);
+	-moz-osx-font-smoothing: #505050 scale;
+	background: #505050;
 }
 .Portfolio:hover figcaption:after {
 	opacity: 1;
@@ -900,7 +917,7 @@ a:hover {
 	-ms-transition: all 0.4s ease-out;
 	transition: all 0.4s ease-out;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: #505050scale;
+	-moz-osx-font-smoothing: #505050 scale;
 }
 .Portfolio:hover figcaption .fa {
 	transform: translateX(0px) translateY(0) translateZ(0) rotate(0deg) scale(1);
