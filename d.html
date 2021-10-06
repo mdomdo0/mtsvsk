@@ -764,10 +764,11 @@
 		}).then(response => {
 			status.innerHTML = "Thanks for your submission!";
 			form.reset()
+			grecaptcha.reset();
 		}).catch(error => {
 			status.innerHTML = "Oops! There was a problem submitting your form"
 		});
-		grecaptcha.reset();
+
 	}
 	form.addEventListener("submit", handleSubmit)
 </script>
