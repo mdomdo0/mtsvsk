@@ -628,7 +628,7 @@
 							</form>
 
 							<br>
-							<p class="form-messege"></p>
+							<p id="my-form-status"></p>
 							<!-- <form class="contant_form" id="contact-form" action="assets/mail.php" method="POST">
 								<div class="contant_form_row">
 									<input name="name" type="text" placeholder="Your Name" class="input-group">
@@ -722,6 +722,27 @@
 			el.setAttribute('required', 'required');
 		}
 	}
+
+	var form = document.getElementById("contact-form");
+
+	async function handleSubmit(event) {
+		event.preventDefault();
+		var status = document.getElementById("my-form-status");
+		var data = new FormData(event.target);
+		fetch(event.target.action, {
+			method: form.method,
+			body: data,
+			headers: {
+				'Accept': 'application/json'
+			}
+		}).then(response => {
+			status.innerHTML = "Thanks for your submission!";
+			form.reset()
+		}).catch(error => {
+			status.innerHTML = "Oops! There was a problem submitting your form"
+		});
+	}
+	form.addEventListener("submit", handleSubmit)
 </script>
 
 </html>
