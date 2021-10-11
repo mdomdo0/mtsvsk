@@ -595,6 +595,13 @@ a:hover {
 	position: relative;
 	margin-bottom: 20px;
 }
+.map {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
 .candidatos .parcial {
 	display: inline-block;
 	width: 100%;
