@@ -613,7 +613,8 @@ a:hover {
 .db_my_certs li span {
 	text-transform: uppercase;
 	font-weight: 100;
-	margin-top: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	display: block;
 }
 
