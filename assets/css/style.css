@@ -580,10 +580,43 @@ a:hover {
 	margin-top: 8px;
 	display: block;
 }
+
+
 .db_download_cv_button {
 	margin: 30px auto 0;
 	display: table;
 }
+
+.db_my_certs li {
+	display: inline-block;
+	width: 900px;
+	text-align: center;
+	cursor: pointer;
+	padding: 24px 22px;
+	transition: all 0.8s ease 0s;
+	margin: 0 10px;
+	margin-bottom: 25px;
+	border-radius: 10px;
+
+	background: #252A2E;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) inset;
+}
+
+.db_my_certs li:hover {
+	background: #808080;
+}
+
+.db_my_certs li .fa {
+	font-size: 30px;
+}
+
+.db_my_certs li span {
+	text-transform: uppercase;
+	font-weight: 100;
+	margin-top: 8px;
+	display: block;
+}
+
 /*========================================
 	About us Css END
 ========================================*/

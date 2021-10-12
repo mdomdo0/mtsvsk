@@ -3,6 +3,10 @@
 	margin: 0 5px;
 	margin-bottom: 15px;
 }
+.db_my_certs li {
+	margin: 0 5px;
+	margin-bottom: 15px;
+}
 .dark_box_bg h4 {
 	font-size: 18px;
 	line-height: 20px;
@@ -22,6 +26,9 @@
 }
 .db_my_interests li {
 	width: 20%;
+}
+.db_my_certs li {
+	width: 100%;
 }
 #cssmenu > ul > li > a {
 	margin: 0px;
@@ -53,6 +60,10 @@
 @media screen and (max-width : 575px) {
 .db_my_interests li {
 	width: 30%;
+}
+
+.db_my_certs li {
+	width: 100%;
 }
 .db_portfolio_section .nav {
 	margin: 0 auto;
@@ -126,6 +137,10 @@
 }
 .db_my_interests li {
 	width: 45%;
+}
+
+.db_my_certs li {
+	width: 100%;
 }
 }
 @media screen and (max-width : 380px) {
