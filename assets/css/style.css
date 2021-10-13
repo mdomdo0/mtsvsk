@@ -606,8 +606,10 @@ a:hover {
 	background: #808080;
 }
 
-.db_my_certs li .fa {
-	font-size: 30px;
+.fwd {
+	font-size: 25px;
+	padding-top: 8px;
+	padding-right: 10px;
 }
 
 .db_my_certs li span {
