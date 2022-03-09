@@ -32,7 +32,7 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-817LM1X76Q"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
+		function gtag () { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'G-817LM1X76Q');
@@ -460,7 +460,7 @@
 
 	<!-- Portfolio Start -->
 	<section id="portfolio" class="db_section_top db_portfolio_section">
-		<div class="db_section_top_gap ">
+		<div class="db_section_top_gap section_bg">
 			<div class="container">
 				<div class="db_section_title wow fadeInUp">
 					<h2>Recent Portfolio</h2>
@@ -806,7 +806,7 @@
 
 	var form = document.getElementById("contact-form");
 
-	async function handleSubmit(event) {
+	async function handleSubmit (event) {
 		event.preventDefault();
 		var status = document.getElementById("my-form-status");
 		var data = new FormData(event.target);
