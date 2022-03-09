@@ -1,4 +1,5 @@
 @media screen and (max-width : 1199px) {
+
 .db_my_interests li {
 	margin: 0 5px;
 	margin-bottom: 15px;
@@ -58,6 +59,9 @@
 }
 }
 @media screen and (max-width : 575px) {
+	.db_my_interests {
+		margin-left: 0px;
+	}
 .db_my_interests li {
 	width: 30%;
 }
@@ -96,6 +100,7 @@
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 20px !important;
+	padding: 50px;
 }
 .circle-ripple {
 	width: 100px;

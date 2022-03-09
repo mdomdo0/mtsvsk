@@ -20,6 +20,39 @@ font-family: 'Righteous', cursive;
    v2.0 | 20110126
    License: none (public domain)
 */
+nav {
+	background: rgba(0, 0, 0, 0.3);
+	width:max-content;
+	display: block;
+	padding: 0.7rem 1.7rem !important;
+	z-index: 99999999999;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 1rem;
+	display: flex;
+	gap: 0.8rem;
+	border-radius: 3rem;
+	backdrop-filter: blur(15px);
+}
+
+nav a {
+	background: transparent;
+	padding: 0.9rem;
+	border-radius: 50%;
+	display: flex;
+	color:#808080;
+	font-size: 1.1rem;
+}
+nav a:hover {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+nav a.active {
+	background: rgba(0, 0, 0, 0.4);
+	color: #FFF;
+}
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -72,7 +105,7 @@ a {
 	cursor: pointer;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, section {
 	display: block;
 }
 
@@ -159,8 +192,8 @@ a:hover {
 	z-index: 99999 !important;
 }
 .db_section_top {
-	padding-top: 60px;
-	margin-top: -60px;
+	/* padding-top: 60px;
+	margin-top: -60px; */
 }
 .db_section_top_gap {
 	padding: 65px 0px;
@@ -378,7 +411,7 @@ a:hover {
 	max-width: 750px;
 	width: 100%;
 	margin: 0px auto;
-	padding: 30px 0 0;
+	padding: 0 0 0;
 	text-align: center;
 	position: relative;
 	background-position: top center;
@@ -389,10 +422,10 @@ a:hover {
 	background: #252A2E;
 	box-shadow: -1rem 0 3rem rgba(0,0,0,0.2);
 	border-radius: 15px;
-	padding: 50px;
+	padding: 40px;
 	padding-top: 0px;
-	margin-top: 70px;
-	margin-bottom: 90px;
+	/* margin-top: 70px; */
+	margin-bottom: 80px;
 }
 .db_face_images {
 	width: 320px;
@@ -1180,7 +1213,7 @@ a:hover {
 ========================================*/
 .footer_wapper {
 	background-color: #252A2E;
-	padding: 150px 0px;
+	padding: 100px 0px;
 	position: relative;
 	text-align: center;
 	padding-top: 50px;
